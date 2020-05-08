@@ -1,0 +1,13 @@
+CREATE DATABASE if not EXISTS testtest;
+
+
+CREATE TABLE IF NOT EXISTS users (
+    id int(11) NOT NULL PRIMARY key AUTO_INCREMENT,
+    firstNames TINYTEXT NOT null,
+    lastNames TINYTEXT NOT NULL,
+    emailUsers TINYTEXT NOT NULL,
+    pwdUsers LONGTEXT NOT NULL
+);
+
+
+create table resetPasswd( email varchar(40) PRIMARY key not null, codeReset longtext not null, expiration text not null )
